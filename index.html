@@ -11,20 +11,18 @@
     
 
     <h1> SUSYS </h1>
-    <script>
-        document.write(Date())
-    </script>
-    <h3 id="text"> JavaScript Intermediate Course </h3>
-    <IMG id="rasm" src="my.jpg"></IMG>
+    <h3 id="text"></h3>
    
     <script>        
-        document.getElementById("rasm").src = "https://images.unsplash.com/photo-1653239040886-a2137d3a544b?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500"
-    
-        document.getElementById("text").innerHTML = 'Sana: ' +  Date() 
+        let ism = prompt("Ism-familiyangizni kiriting")
+        let olcham = prompt("Qancha o'lchamda bo'lsin: ")
+        let rang = prompt("Qanaqa rangda bo'lsin: ")
+        
+        document.getElementById("text").innerHTML = `${ism}`
+        document.getElementById("text").style.fontSize = `${olcham}px`;
+        document.getElementById("text").style.color = `${rang}`;
+        
     </script>
-
-    <script src="main.js"></script>
-
     
 </body>
 </html>
