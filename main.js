@@ -1,24 +1,17 @@
 // JavaScript
 
-const odam = {
-    ismi: 'A',
-    familiyasi: 'B',
-    yoshi: 25,
-    kasbi: 'P',
-    funksiya: function() {
-        console.log(this.ismi + this.familiyasi)
-    }
+function Mashina(nomi, rangi) {
+    this.nomi = nomi
+    this.rangi = rangi
 }
 
-console.log(odam.funksiya())
-
-odam.ismi = 'Ismi '
-
-odam.metod = function() {
-    console.log('YAngi metod')
-}
-
-console.log(odam)
-
-
-
+const mashina1 = new Mashina('Audi', 'qizil')
+const mashina2 = Mashina('Mers', 'qizil')
+const mashina3 = Mashina('BMW', 'qizil')
+const mashina4 = new Mashina('Audi', 'qizil')
+const mashina5 = new Mashina('Audi', 'qizil')
+const mashina6 = new Mashina('Audi', 'qizil')
+const mashina7 = new Mashina('Audi', 'qizil')
+console.log(mashina1.nomi)
+console.log(mashina2)
+console.log(mashina3.nomi)
