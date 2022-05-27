@@ -4,16 +4,21 @@ const odam = {
     ismi: 'A',
     familiyasi: 'B',
     yoshi: 25,
-    kasbi: 'P'
+    kasbi: 'P',
+    funksiya: function() {
+        console.log(this.ismi + this.familiyasi)
+    }
 }
 
-console.log(odam["familiyasi"])
+console.log(odam.funksiya())
 
-odam.familiyasi = "Boshqa"
+odam.ismi = 'Ismi '
 
-console.log(odam["familiyasi"])
-
-odam.kalit = "Malumot"
+odam.metod = function() {
+    console.log('YAngi metod')
+}
 
 console.log(odam)
+
+
 
